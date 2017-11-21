@@ -1,0 +1,8 @@
+
+adtf_add_filter(demo_csvmultiarrayfilter csvmultiarrayfilter.h stdafx.h stdafx.cpp csvmultiarrayfilter.cpp)
+adtf_install_plugin(demo_csvmultiarrayfilter src/examples/bin)
+
+adtf_set_folder(demo_csvmultiarrayfilter examples/filters)
+
+install(FILES demo_csvmultiarrayfilter.plb.plugindescription DESTINATION src/examples/bin/debug CONFIGURATIONS Debug)
+install(FILES demo_csvmultiarrayfilter.plb.plugindescription DESTINATION src/examples/bin CONFIGURATIONS Release RelWithDebInfo)
